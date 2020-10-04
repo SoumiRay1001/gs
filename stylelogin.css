@@ -1,11 +1,27 @@
 body{
-	font-family: 'Open Sans', sans-serif;
-	background: url(../images/restaurant.png);
-    min-height: 900px;
+	background: url("images/homeback.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+@media only screen and (min-width : 320px) and (max-width : 600px) {
+	body{
+		background: url("images/login.png") no-repeat center center fixed;
+		-webkit-background-size: 100%; 
+    		-moz-background-size: 100%; 
+    		-o-background-size: 100%; 
+    		background-size: 100%; 
+    		-webkit-background-size: cover; 
+    		-moz-background-size: cover; 
+   	 	-o-background-size: cover; 
+   	 	background-size: cover
+	}
 }
 input[type=submit] {
     width: 10em;  height: 3em;
-     background-color:#B3B6B7
+     background-color:#2DC2BC;
+	 border-radius: 5px;
 }
 h1 {
   font-size: 2.3em;
@@ -13,6 +29,10 @@ h1 {
   color: #fff;
   text-align: center;
   margin: 1em 0em 0em 0em;
+}
+h4{
+	font-family: Comic Sans MS, cursive, sans-serif;
+	font-size: small;
 }
 .login {
   width: 31%;
@@ -40,7 +60,7 @@ h1 {
   -webkit-appearance: none;
 }
 form {
-  padding: 22px 0px 0px 0px;
+  padding: 21px 0px 22px 5px;
 }
 .login input[type="password"] {
   outline: none;
@@ -55,6 +75,7 @@ form {
   color:#c0c0c0;
 }
 .login-bwn {
+  padding: 5px 0px 0px 0px;
   text-align: center;
 }
 .login input[type="submit"] {
@@ -264,7 +285,7 @@ label.checkbox {
   border-radius: 5px;
 }
 .reg-bwn a:hover{
-  background: rgb(219, 0, 0);
+  background: #add8e6;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
